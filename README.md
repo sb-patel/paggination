@@ -1,0 +1,1 @@
+This project is all about Paggination implementation at fron end using React and Javascript
