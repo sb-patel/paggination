@@ -40,3 +40,30 @@
 .read-the-docs {
   color: #888;
 }
+
+.product-card {
+  width: 210px;
+  padding: 5px;
+  margin: 5px;  
+  border: 1px solid black;
+}
+
+.product-img {
+  width: 200px;
+  height: 200px;
+}
+
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paggination-container {
+  margin-bottom: 10px;
+}
+
+.paggination-number {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid blue;
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ProductCard from "./ProductCard";
 
 const Product = () => {
     const [products, setProducts] = useState([]);
@@ -19,12 +20,21 @@ const Product = () => {
 
     return (
         <div>
-            <h1>Products...</h1>
-            <ul>
+            <h1>Paggination</h1>
+            <div className="paggination-container">
+                {
+                    [...Array(10).keys()].map((n) => (
+                        <span className="paggination-number" key={n}>
+                            {n}
+                        </span>
+                    ))
+                }
+            </div>
+            <div className="product-container">
                 {products.map((product) => (
-                    <li key={product.id}>{product.title}</li>
+                    <ProductCard key={product.id} title={product.title} image={product.thumbnail} />
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
