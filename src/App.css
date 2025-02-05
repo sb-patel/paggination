@@ -58,12 +58,17 @@
   flex-wrap: wrap;
 }
 
-.paggination-container {
+.pagination-container {
   margin-bottom: 10px;
 }
 
-.paggination-number {
+.pagination-number {
   padding: 8px;
   margin: 5px;
   border: 1px solid blue;
+  cursor: pointer;
+}
+
+.active {
+  background-color: lightblue;
 }
